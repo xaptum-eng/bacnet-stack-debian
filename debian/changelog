@@ -1,3 +1,9 @@
+bacnet-stack (0.8.5-3) unstable; urgency=medium
+
+  * build library with fPIC
+
+ -- David R. Bild <david.bild@xaptum.com>  Thu, 31 May 2018 21:37:57 +0000
+
 bacnet-stack (0.8.5-2) unstable; urgency=medium
 
   * include ports/linux/*.h headers
