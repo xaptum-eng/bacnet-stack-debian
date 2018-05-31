@@ -1,0 +1,12 @@
+Build static lib with fPIC.
+--- a/lib/Makefile
++++ b/lib/Makefile
+@@ -187,7 +187,7 @@
+ OBJS = ${SRCS:.c=.o}
+ 
+ # use local includes, but other values from calling Makefile
+-CFLAGS  = $(WARNINGS) $(DEBUGGING) $(OPTIMIZATION) $(STANDARDS) $(INCLUDES) $(DEFINES)
++CFLAGS  = -fPIC $(WARNINGS) $(DEBUGGING) $(OPTIMIZATION) $(STANDARDS) $(INCLUDES) $(DEFINES)
+ 
+ all: $(LIBRARY)
+ 
