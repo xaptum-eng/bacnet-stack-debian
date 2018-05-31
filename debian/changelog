@@ -1,5 +1,15 @@
+bacnet-stack (0.8.5-2) unstable; urgency=medium
+
+  [ David R. Bild ]
+  * include ports/linux/*.h headers
+
+ -- David R. Bild <david.bild@xaptum.com>  Thu, 31 May 2018 19:10:04 +0000
+
 bacnet-stack (0.8.5-1) unstable; urgency=medium
 
+  [ David R. Bild ]
   * Initial release
+
+  [ root ]
 
  -- David R. Bild <david.bild@xaptum.com>  Thu, 31 May 2018 16:42:55 +0000
