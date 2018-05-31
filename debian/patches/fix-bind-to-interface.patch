@@ -1,0 +1,48 @@
+Allow BACnet simulator to be bound to a specific interface
+--- a/ports/linux/bip-init.c
++++ b/ports/linux/bip-init.c
+@@ -42,6 +42,11 @@
+ 
+ bool BIP_Debug = false;
+ 
++int get_local_address_ioctl(
++    char *ifname,
++    struct in_addr *addr,
++    int request);
++
+ /* gets an IP address by name, where name can be a
+    string that is an IP address in dotted form, or
+    a name that is a domain name
+@@ -199,7 +204,8 @@
+         bip_set_socket(-1);
+         return false;
+     }
+-    /* bind the socket to the local port number and IP address */
++    /* bind the socket to the local port number */
++    /* and to the given interface (if specified) */
+     sin.sin_family = AF_INET;
+     sin.sin_addr.s_addr = htonl(INADDR_ANY);
+     sin.sin_port = bip_get_port();
+@@ -211,6 +217,22 @@
+         bip_set_socket(-1);
+         return false;
+     }
++    if (ifname) {
++        status =
++            setsockopt(sock_fd,
++                       SOL_SOCKET,
++                       SO_BINDTODEVICE,
++                       ifname,
++                       strlen(ifname));
++        if (status < 0) {
++            printf("Error listening on specified interface (%s): %s\n",
++                   ifname,
++                   strerror(errno));
++            close(sock_fd);
++            bip_set_socket(-1);
++            return false;
++        }
++     }
+ 
+     return true;
+ }

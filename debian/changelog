@@ -1,0 +1,5 @@
+bacnet-stack (0.8.5-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- David R. Bild <david.bild@xaptum.com>  Thu, 31 May 2018 16:42:55 +0000

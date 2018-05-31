@@ -1,0 +1,2 @@
+include/* usr/include/bacnet
+lib/libbacnet.a usr/lib/@DEB_HOST_MULTIARCH@
