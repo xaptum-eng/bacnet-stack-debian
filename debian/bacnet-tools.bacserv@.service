@@ -1,0 +1,12 @@
+[Unit]
+Description=BACnet device simulator with ID %i
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/bacserv %i
+User=demo
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
