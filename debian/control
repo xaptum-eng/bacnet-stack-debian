@@ -1,7 +1,7 @@
 Source: bacnet-stack6
 Priority: optional
 Maintainer: David R. Bild <david.bild@xaptum.com>
-Build-Depends: debhelper (>= 9), dh-systemd
+Build-Depends: debhelper (>= 9), dh-systemd, dh-exec
 Standards-Version: 3.9.8
 Section: libs
 Homepage: http://bacnet.sourceforge.net/
