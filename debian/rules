@@ -14,4 +14,5 @@ override_dh_auto_configure:
 	        debian/libbacnet-dev.install.in > debian/libbacnet-dev.install
 
 override_dh_systemd_enable:
-	dh_systemd_enable --name=bacserv@
+	dh_systemd_enable --no-enable --name=bacserv@
+	dh_systemd_enable --no-enable --name=bacroute
