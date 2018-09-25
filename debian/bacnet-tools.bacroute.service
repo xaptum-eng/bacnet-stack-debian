@@ -9,7 +9,6 @@ Environment=BACNET_IFACE=eth0
 Environment=BACNET_BIP6_IFACE=eth1
 
 ExecStart=/usr/bin/bacroute
-User=demo
 Restart=always
 RestartSec=3
 
