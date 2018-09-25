@@ -14,4 +14,4 @@ bin/bacucov  => usr/bin/bacucov6
 bin/bacupt   => usr/bin/bacupt6
 bin/bacwh    => usr/bin/bacwh6
 bin/bacwi    => usr/bin/bacwi6
-bin/bacwp    =>usr/bin/bacwp6
+bin/bacwp    => usr/bin/bacwp6
