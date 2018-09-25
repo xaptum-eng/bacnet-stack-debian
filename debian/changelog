@@ -1,3 +1,9 @@
+bacnet-stack6 (0.8.5-7) unstable; urgency=medium
+
+  * install bacwp6 correctly
+
+ -- David R. Bild <david.bild@xaptum.com>  Tue, 25 Sep 2018 19:03:17 +0000
+
 bacnet-stack6 (0.8.5-6) unstable; urgency=medium
 
   * put binaries in proper location
