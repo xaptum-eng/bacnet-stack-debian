@@ -15,6 +15,7 @@ demo/readprop/bacrp
 demo/readpropm/bacrpm
 demo/readrange/bacrr
 demo/reinit/bacrd
+demo/router-ipv6/bacroute
 demo/scov/bacscov
 demo/server/bacserv
 demo/timesync/bacts
@@ -24,4 +25,4 @@ demo/whohas/bacwh
 demo/whois/bacwi
 demo/whoisrouter/bacwir
 demo/writefile/bacawf
-/demo/writeprop/bacwp
+demo/writeprop/bacwp
