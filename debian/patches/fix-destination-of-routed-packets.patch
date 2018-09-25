@@ -1,0 +1,25 @@
+From f8f2cfb7ba81a6c84fac8ba120587c3d178f134b Mon Sep 17 00:00:00 2001
+From: "David R. Bild" <david.bild@xaptum.com>
+Date: Tue, 25 Sep 2018 16:38:06 +0000
+Subject: [PATCH] fix destination of routed packets
+
+---
+ demo/router-ipv6/main.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/demo/router-ipv6/main.c b/demo/router-ipv6/main.c
+index 1d7bf73..775c719 100644
+--- a/demo/router-ipv6/main.c
++++ b/demo/router-ipv6/main.c
+@@ -959,7 +959,7 @@ static void routed_apdu_handler(
+             npdu->hop_count--;
+             routed_src_address(&router_src, snet, src);
+             npdu_len =
+-                npdu_encode_pdu(&Tx_Buffer[0], &remote_dest, &router_src, npdu);
++                npdu_encode_pdu(&Tx_Buffer[0], dest, &router_src, npdu);
+             memmove(&Tx_Buffer[npdu_len], apdu, apdu_len);
+             datalink_send_pdu(port->net, &remote_dest, npdu,
+                 &Tx_Buffer[0], npdu_len+apdu_len);
+-- 
+2.11.0
+
