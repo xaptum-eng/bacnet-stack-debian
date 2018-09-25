@@ -1,3 +1,11 @@
+bacnet-stack (0.8.5-5) unstable; urgency=medium
+
+  * fix routing of IPv6 to IPv4 packets
+  * build IPv4-IPv6 router
+  * install systemd service unit for bacroute
+
+ -- David R. Bild <david.bild@xaptum.com>  Tue, 25 Sep 2018 17:51:10 +0000
+
 bacnet-stack (0.8.5-4) unstable; urgency=medium
 
   * add systemd template service unit file
