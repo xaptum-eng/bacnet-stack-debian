@@ -5,13 +5,8 @@ After=network.target
 [Service]
 Environment=BACNET_IP_NET=1
 Environment=BACNET_IP6_NET=2
-
 Environment=BACNET_IFACE=eth0
 Environment=BACNET_BIP6_IFACE=eth1
-
-Environment=BACNET_IP_PORT=47808
-Environment=BACNET_BIP6_PORT=47808
-Environment=BACNET_BIP6_BROADCAST=FF05
 
 ExecStart=/usr/bin/bacroute
 User=demo
