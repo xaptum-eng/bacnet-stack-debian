@@ -1,3 +1,9 @@
+bacnet-stack (0.8.5-7) unstable; urgency=medium
+
+  * run bacroute as root
+
+ -- David R. Bild <david.bild@xaptum.com>  Tue, 25 Sep 2018 20:25:55 +0000
+
 bacnet-stack (0.8.5-6) unstable; urgency=medium
 
   * remove unneeded environment vars from bacroute service unit
