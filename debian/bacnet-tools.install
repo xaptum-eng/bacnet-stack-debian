@@ -11,6 +11,7 @@ bin/bacrp usr/bin
 bin/bacrpd.sh usr/bin
 bin/bacrpm usr/bin
 bin/bacrr usr/bin
+bin/bacroute usr/bin
 bin/bacscov usr/bin
 bin/bacserv usr/bin
 bin/bacts usr/bin
