@@ -1,4 +1,4 @@
-Source: bacnet-stack
+Source: bacnet-stack6
 Priority: optional
 Maintainer: David R. Bild <david.bild@xaptum.com>
 Build-Depends: debhelper (>= 9), dh-systemd
@@ -8,21 +8,10 @@ Homepage: http://bacnet.sourceforge.net/
 #Vcs-Git: https://anonscm.debian.org/collab-maint/bacnet-stack.git
 #Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/bacnet-stack.git
 
-Package: libbacnet-dev
-Section: libdevel
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: development files for the BACnet Stack library
- The BACNet protocol stack library provides BACnet application layer,
- network layer and media access (MAC) layer communications services.
- .
- This package provides the development files (i.e., icnludes and static
- library) that allow one to build software which uses libbacnet.
-
-Package: bacnet-tools
+Package: bacnet-tools6
 Architecture: any
 Depends: ${misc:Depends}
 Description: command line utilities for BACnet services
  The BACnet tools are binary demo application command line
- utilities that use BACnet/IP to perform a variety of
+ utilities that use BACnet/IPv6 to perform a variety of
  BACnet services.

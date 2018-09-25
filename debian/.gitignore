@@ -1,9 +1,7 @@
 .debhelper/
-bacnet-tools/
-libbacnet-dev/
+bacnet-tools6/
 debhelper-build-stamp
 files
-libbacnet-dev.install
 *.debhelper.log
 *.substvars
 *.debhelper
